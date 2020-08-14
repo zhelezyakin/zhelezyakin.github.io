@@ -1,3 +1,4 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 //EN">
 <HTML lang="ru">
 
   <HEAD>
@@ -13,7 +14,10 @@
 
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Vollkorn&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Vollkorn&display=swap" rel="stylesheet">
+
+    <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
 
     <style>
     @font-face {
@@ -24,16 +28,60 @@
         font-style: normal;
         font-display: swap;
     }
+
+    .tooltip-inner {
+    	min-width: 100px;
+    	max-width: 100%;
+    }
+
+    @media (max-width: 320px) {
+    	.tooltip-inner {
+    		min-width: initial;
+    		max-width: 320px;
+    	}
+    }
+
+    .mzh-color {
+      color: #bc3535;
+    }
+    .mzh-font {
+      font-family: 'Albertus Extra';
+    }
     </style
 
   </HEAD>
 
-  <BODY style="font-size:1em; font-family: 'Vollkorn', serif;">
+  <BODY class="container" style="font-size:1em; font-family: 'Vollkorn', serif;">
 
-    <h1 style="font-size:300%;">
-      Сеть мастерских
-      <div style="font-family: 'Albertus Extra';"><font color="red">М</font>астер <font color="red">Ж</font>елезякин<font color="red">Ъ</font></div>
-    </h1>
+  <header>
+
+    <nav class="navbar fixed-top navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <div class="d-flex align-items-center mzh-font">
+          <img class="mr-1" width="48" height="48" src="img/mzh-logo.png" d-inline-block align-top alt=""></img>
+          <font class="mzh-color">М</font>астер <font class="mzh-color">Ж</font>елезякин<font class="mzh-color">Ъ</font>
+        </div>
+      </a>
+      </div>
+    </nav>
+
+  </header>
+
+  <div class="jumbotron mt-5">
+
+      <div class="d-flex">
+        <h1 class="mr-3">
+            <img height="150" src="img/mzh-logo.png"></img>
+        </h1>
+        <div>
+            <h1 class="mzh-font" style="font-size:3em;">
+              <font style="font-size:20px;">Сеть мастерских</font><br/>
+              <font class="mzh-color">М</font>астер <font class="mzh-color">Ж</font>елезякин<font class="mzh-color">Ъ</font>
+            </h1>
+        </div>
+
+        </div>
 
       <p>
         Сеть мастерских по металлоремонту в Протвино и Кремёнках и Серпухове.
@@ -53,45 +101,93 @@
       </ul>
     </p>
 
-    <p>Все это и много чего ещё сделает для Вас Мастер ЖелезякинЪ!</p>
+    <p class="lead">Все это и много чего ещё сделает для Вас Мастер ЖелезякинЪ!</p>
 
-    <p>
-      Адреса наших мастерских:
+    </div>
 
-      <ol>
-        <li>
-          Протвино, <a href="https://yandex.ru/maps/-/CCQtIDFiTB">ТЦ "Лабиринт" (крытый рынок)</a>, с автостоянки на цокольный этаж и налево.</br>
-          <a href="https://yandex.ru/maps/-/CCQtIDFiTB">
-            <img height="350" src="https://static-maps.yandex.ru/1.x/?l=map&ll=37.222871,54.876825&pt=37.222871,54.876825,pm2rdl&lang=ru_RU&spn=0.005,0.005"/>
-          </a><br/>
-          По будням с 10 до 19 часов, в выходные до 18-00.
-        </li>
-        <li>
-          Кремёнки, <a href="https://yandex.ru/maps/-/CCQtIDFdOA">ТЦ "Кремль"</a>, цокольный этаж, слева.</br>
-          <a href="https://yandex.ru/maps/-/CCQtIDFdOA">
-            <img height="350" src="https://static-maps.yandex.ru/1.x/?l=map&ll=37.119122,54.882798&pt=37.119122,54.882798,pm2rdl&lang=ru_RU&spn=0.005,0.005"/>
-          </a>
-          </br>
-          С 10 до 18 часов, без выходных.
-        </li>
-        <li>
-          Серпухов, мкрн. Ногина, <a href="https://yandex.ru/maps/-/CCQtIDb6TA">ТЦ "Престиж"</a>, цокольный этаж, слева.</br>
-          <a href="https://yandex.ru/maps/-/CCQtIDb6TA">
-            <img height="350" src="https://static-maps.yandex.ru/1.x/?l=map&ll=37.459861,54.929833&pt=37.459861,54.929833,pm2rdl&lang=ru_RU&spn=0.005,0.005"/>
-          </a><br/>
-          По будням с 10 до 19 часов, в выходные до 18-00.
-        </li>
-      </ol>
-    </p>
+    <div class="d-flex flex-row">
 
-    <footer>
-      <p>
+      <div class="col-sm-4">
+        <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Железякинъ в Протвино</h5>
+          <p class="card-text"><a
+              href="https://yandex.ru/maps/-/CCQtIDFiTB"
+              tabindex="0"
+              role="button"
+              data-html="true"
+              data-toggle="tooltip"
+              title
+              data-original-title='<img height="350" src="https://static-maps.yandex.ru/1.x/?l=map&ll=37.222871,54.876825&pt=37.222871,54.876825,pm2rdl&lang=ru_RU&spn=0.005,0.005">'>
+              ТЦ "Лабиринт" (крытый рынок)</a>, с автостоянки на цокольный этаж и налево.</br></p>
+          <p class="card-text">По будням с 10 до 19 часов, в выходные до 18-00.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+          <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Железякинъ в Кремёнках</h5>
+            <p class="card-text"><a
+              href="https://yandex.ru/maps/-/CCQtIDFdOA"
+              tabindex="0"
+              role="button"
+              data-html="true"
+              data-toggle="tooltip"
+              title
+              data-original-title='<img height="350" src="https://static-maps.yandex.ru/1.x/?l=map&ll=37.119122,54.882798&pt=37.119122,54.882798,pm2rdl&lang=ru_RU&spn=0.005,0.005"/>'>
+              ТЦ "Кремль"</a>, цокольный этаж, слева.</p>
+            <p class="card-text">С 10 до 18 часов, без выходных.</p>
+          </div>
+          </div>
+      </div>
+
+      <div class="col-sm-4">
+          <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Железякинъ в Серпухове</h5>
+            <p class="card-text">Мкрн. Ногина, <a
+              href="https://yandex.ru/maps/-/CCQtIDb6TA"
+              tabindex="0"
+              role="button"
+              data-html="true"
+              data-toggle="tooltip"
+              title
+              data-original-title='<img height="350" src="https://static-maps.yandex.ru/1.x/?l=map&ll=37.459861,54.929833&pt=37.459861,54.929833,pm2rdl&lang=ru_RU&spn=0.005,0.005"/>'>
+              ТЦ "Престиж"</a>, цокольный этаж, слева.</з>
+            <p class="card-text">По будням с 10 до 19 часов, в выходные до 18-00.</p>
+          </div>
+          </div>
+      </div>
+
+    </div>
+
+    <hr class="featurette-divider">
+
+    <footer class="container">
+      <p class="float-left">
         Контакты:
-        <a href="https://vk.com/metall_remont">VK</a>
+        <a href="https://vk.com/metall_remont"><i class="fab fa-vk"></i></a>
         <a href="https://www.avito.ru/protvino/predlozheniya_uslug/master_zhelezyakin_narezka_klyucheydomofonye_i_dr_1903067223">Avito</a>
       </p>
     </footer>
 
   </BODY>
+
+
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+<script src="https://use.fontawesome.com/releases/v5.14.0/js/all.js" data-auto-replace-svg="nest"></script>
+
+  <script>
+  $(function(){
+      // Enables popover
+      $("[data-toggle=tooltip]").tooltip();
+  });
+  </script>
 
 </HTML>
