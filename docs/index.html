@@ -60,10 +60,26 @@
     .mzh-color {
       color: #bc3535;
     }
-  
+
     .mzh-font {
       font-family: 'Albertus Extra';
-      font-size: 3rem;
+      font-size: 1.5rem;
+    }
+
+    .logo-size {
+        width: "64px";
+        height: "64px";
+      }
+
+    @media (min-width: 768px) {
+      .mzh-font {
+        font-family: 'Albertus Extra';
+        font-size: 2.5rem;
+      }
+      .logo-size {
+        width: "24px";
+        height: "24px";
+      }
     }
 
     .mzh-hdr {
@@ -81,7 +97,7 @@
         <div class="container">
           <a class="navbar-brand" href="#">
             <div class="d-flex align-items-center mzh-font">
-              <img class="mr-1" width="64" height="100%" src="img/mzh-logo.png" d-inline-block align-top alt=""></img>
+              <img class="mr-1 d-inline-block align-top logo-size"   width="64px" height="64px" src="img/mzh-logo.png" alt=""></img>
               <font class="mzh-color">М</font>астер <font class="mzh-color">Ж</font>елезякин<font class="mzh-color">Ъ</font>
             </div>
           </a>
@@ -92,14 +108,18 @@
 
     <main role="main" class="mt-5 pt-3">
 
-      <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+      <button id="note" class="btn btn-danger mb-2">Требуется работник!</button>
+
+      <div id="note-alert" class="alert alert-secondary alert-dismissible fade show d-none" role="alert">
         <strong>Друзья мои!</strong>
         В нашу сеть мастерских требуется слесарь по металлоремонту. Если вы уже умеете работать руками, это очень приветствуется! Всему научим, покажем, расскажем. График 5/2, (или ваши предложения), зарплата 25 тысяч + премия по результатам работы. Возможность развиваться, совершенствоваться с пользой для себя и окружающих. Гибкость мышления, инициатива и корректное общение с заказчиком будут прекрасным дополнением вашего портрета)). Звоните, пишите, всё расскажем.<br>
         Телефоны <a href="tel:+79152024172">+7 (915) 202 41 72</a>, <a href="tel:+79252867299">+7 (925) 286 72 99</a>
 
+        <!--
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
+        -->
       </div>
 
 
@@ -296,10 +316,19 @@
 <script src="https://use.fontawesome.com/releases/v5.14.0/js/all.js" data-auto-replace-svg="nest"></script>
 
   <script>
-  $(function(){
-      // Enables popover
-      $("[data-toggle=tooltip]").tooltip();
-  });
+    $(document).ready(function(){
+
+      $('#note').click(function(){
+          $('#note-alert').toggleClass("d-none");
+      });
+  
+      $(function(){
+        // Enables popover
+        $("[data-toggle=tooltip]").tooltip();
+      });
+
+    });
+     
   </script>
 
 </HTML>
