@@ -100,7 +100,7 @@
         <div class="container">
           <a class="navbar-brand" href="#">
             <div class="d-flex align-items-center mzh-font">
-              <img class="mr-1 d-inline-block align-top logo-size" src="img/mzh-logo.png" alt=""></img>
+              <img class="d-inline-block align-top mr-2 logo-size" src="img/mzh-logo.png" alt=""></img>
               <font class="mzh-color">М</font>астер <font class="mzh-color">Ж</font>елезякин<font class="mzh-color">Ъ</font>
             </div>
           </a>
@@ -111,12 +111,18 @@
 
     <main role="main" class="mt-5 pt-3">
 
-      <button id="note" class="btn btn-danger mb-2">Требуется работник!</button>
+      <button class="btn btn-sm w-100 btn-outline-secondary mb-2" type="button" data-toggle="collapse" data-target="#collapseNote" aria-expanded="false" aria-controls="collapseNote">
+        <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-exclamation-circle-fill mzh-color" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+        </svg>
+        <strong class="ml-1">Мастер Железякинъ ищет помощника!</strong>
+      </button>
 
-      <div id="note-alert" class="alert alert-secondary alert-dismissible fade show d-none" role="alert">
-        <strong>Друзья мои!</strong>
-        В нашу сеть мастерских требуется слесарь по металлоремонту. Если вы уже умеете работать руками, это очень приветствуется! Всему научим, покажем, расскажем. График 5/2, (или ваши предложения), зарплата 25 тысяч + премия по результатам работы. Возможность развиваться, совершенствоваться с пользой для себя и окружающих. Гибкость мышления, инициатива и корректное общение с заказчиком будут прекрасным дополнением вашего портрета)). Звоните, пишите, всё расскажем.<br>
-        Телефоны <a href="tel:+79152024172">+7 (915) 202 41 72</a>, <a href="tel:+79252867299">+7 (925) 286 72 99</a>
+      <div id="collapseNote" class="alert alert-secondary alert-dismissible shadow fade collapse" role="alert">
+        <strong>Друзья мои!</strong><br/>
+        В нашу сеть мастерских требуется слесарь по металлоремонту. Если вы уже умеете работать руками, это очень приветствуется! Всему научим, покажем, расскажем. График 5/2 (или ваши предложения), зарплата 25 тысяч + премия по результатам работы. Возможность развиваться, совершенствоваться с пользой для себя и окружающих. Гибкость мышления, инициатива и корректное общение с заказчиком будут прекрасным дополнением вашего портрета.<br><br>
+        Звоните, всё расскажем:
+        <a href="tel:+79152024172">+7 (915) 202 41 72</a> или <a href="tel:+79252867299">+7 (925) 286 72 99</a>
 
         <!--
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -126,7 +132,7 @@
       </div>
 
 
-      <div id="myCarousel" class="carousel slide pointer-event mt-4" data-ride="carousel">
+      <div id="myCarousel" class="carousel slide mt-4" data-ride="carousel">
 
         <h2 class="mzh-font mzh-color" style="font-size: 2.2rem;">
           Сеть наших мастерских предлагает широкий выбор услуг
@@ -138,13 +144,12 @@
           <li data-target="#myCarousel" data-slide-to="2" class=""></li>
           <li data-target="#myCarousel" data-slide-to="3" class=""></li>
           <li data-target="#myCarousel" data-slide-to="4" class=""></li>
-          <li data-target="#myCarousel" data-slide-to="5" class=""></li>
         </ol>
 
         <div class="carousel-inner">
 
           <div class="carousel-item active">
-            <img src="img/0.jpeg"></img>
+            <img class="d-block w-100" src="img/0.jpeg"></img>
             <div class="container">
               <div class="carousel-caption text-left">
                 <h1 class="mzh-hdr">Изготовление ключей</h1>
@@ -154,27 +159,27 @@
           </div>
 
           <div class="carousel-item">
-            <img src="img/0.jpeg"></img>
+            <img class="d-block w-100" src="img/0.jpeg"></img>
             <div class="container">
               <div class="carousel-caption text-left">
-                <h1 class="mzh-hdr">Профессиональная заточка инструмента</h1>
-                <p>Садовый инвентарь, бензоинструменты, кухонные принадлежности, а также охотничьи ножи и коньки. Все это аккуратно и бережно заточат наши мастера.</p>
+                <h1 class="mzh-hdr">Заточка инструмента</h1>
+                <p>Садовый инвентарь, бензоинструменты, кухонные принадлежности, а также охотничьи ножи и коньки. Все это аккуратно и профессионально заточат наши мастера.</p>
               </div>
             </div>
           </div>
 
           <div class="carousel-item">
-            <img src="img/0.jpeg"></img>
+            <img class="d-block w-100" src="img/0.jpeg"></img>
             <div class="container">
               <div class="carousel-caption text-left">
-                <h1 class="mzh-hdr">Ремонт фурнитуры на одежде, сумках и обуви</h1>
+                <h1 class="mzh-hdr">Ремонт фурнитуры</h1>
                 <p>Большой выбор металлических пуговиц, заклёпок, люверсов, хольнитенов, блочек, а также бегунков, концевиков и направляющих для молний представлен в наших мастерских. Широкая цветовая гамма фурнитуры и разнообразие стилей на ваш вкус.</p>
               </div>
             </div>
           </div>
 
           <div class="carousel-item">
-            <img src="img/0.jpeg"></img>
+            <img class="d-block w-100" src="img/0.jpeg"></img>
             <div class="container">
               <div class="carousel-caption text-left">
                 <h1 class="mzh-hdr">Ремонт аксессуаров</h1>
@@ -184,10 +189,10 @@
           </div>
 
           <div class="carousel-item">
-            <img src="img/0.jpeg"></img>
+            <img class="d-block w-100" src="img/0.jpeg"></img>
             <div class="container">
               <div class="carousel-caption text-left">
-                <h1 class="mzh-hdr">Починка других металлоизделий</h1>
+                <h1 class="mzh-hdr">И другие услуги</h1>
                 <p>Здесь вам качественно починят зонт, сумку, портфель. Также можно сдать в ремонт чемодан, ремень и многое другое.</p>
               </div>
             </div>
@@ -272,6 +277,9 @@
         </div>
       </div>
 
+      
+      <!--
+
       <hr class="featurette-divider">
 
       <div class="row featurette">
@@ -296,16 +304,29 @@
         </div>
       </div>
 
-      <hr class="featurette-divider">
+
+    -->
+
+
+      <hr class="featurette-divider-bottom">
 
     </main>
 
-    <footer class="container">
-      <p class="float-left">
+    <footer class="container mt-4">
+      <h4 class="float-left">
         Контакты:
         <a href="https://vk.com/metall_remont"><i class="fab fa-vk"></i></a>
         <a href="https://www.avito.ru/protvino/predlozheniya_uslug/master_zhelezyakin_narezka_klyucheydomofonye_i_dr_1903067223">Avito</a>
-      </p>
+      </h4>
+      <h4 class="float-right mzh-hdr">
+        <svg width="1.7em" height="1.7em" viewBox="0 0 16 16" class="bi bi-key-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2zM2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+        </svg>
+
+        <strong>
+          <font class="mzh-color">М</font>астер <font class="mzh-color">Ж</font>елезякин<font class="mzh-color">Ъ</font>
+        </strong>
+      </h4>
     </footer>
 
   </BODY>
@@ -321,10 +342,6 @@
   <script>
     $(document).ready(function(){
 
-      $('#note').click(function(){
-          $('#note-alert').toggleClass("d-none");
-      });
-  
       $(function(){
         // Enables popover
         $("[data-toggle=tooltip]").tooltip();
